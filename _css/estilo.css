@@ -1,0 +1,252 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400i');
+@font-face {
+	font-family: 'FonteLogo';
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+/* background-image: url("th.jpg"); */
+	color: rgba(0,0,0,0.5);
+	background-color: #dddddd;
+	font-family: Arial, sans-serif;
+}
+		
+p {
+	text-align: justify;
+	text-indent: 50px;
+}
+
+p#pSpec {
+	color: rgb(0,0,0);
+	font-weight: bold;
+}
+		
+div#interface {
+	width: 85%;
+	background-color: white;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+}
+
+header#cabecalho img#icone {
+	position: absolute;
+	left: 75%;
+	top: 10%;
+}
+
+header#cabecalho {
+	border-bottom: 1px #606060 solid;
+	height: 140px;
+	background: url("../_imagens/glass-logo-peq.jpg")no-repeat 0px/* lateral */ 80px /* vertical */;
+}
+
+header#cabecalho h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 30pt;
+	color: #606060;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+	padding: 0px;
+	margin-bottom:0px;
+}
+header#cabecalho h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15pt;
+	color: #888888;
+	padding: 0px;
+	margin-top: 0px;
+}
+/* Formatação de imagens com legendas */
+
+header#cabecalho-artigo h1 {
+	font-family: 'FonteLogo','sans-serif'
+	font-size: 20pt;
+	color: #606060;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+header#cabecalho-artigo h2 {
+	font-size: 13pt;
+	color: #cecece;
+	background-color: #ffffff;
+	margin: 0px;
+}
+header#cabecalho-artigo h3 {
+	font-size: 12pt;
+	color: #606060;
+	
+}
+
+figure.foto-legenda {
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+}
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color:rgba(0,0,0,.4);
+	color: white;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+/* formatação do menu */
+
+nav#menu {
+	display: block;
+}
+
+nav#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 400px;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color .2s;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu h1 {
+	display: none;
+}
+
+nav#menu a {
+	color: #000000;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: white;
+}
+
+aside#lateral {
+	display: block;
+	width: 35%;
+	float: right;
+	background-color: #dddddd;
+	padding: 10px;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+	margin-top: 5px;
+}
+
+aside#lateral h1 {
+	font-family: 'FonteLogo', sans-serif;
+	font-size: 20pt;
+	color: #606060;
+}
+aside#lateral h2 {
+	background-color: #606060;
+	font-size: 13pt;
+	color: #ffffff;
+	padding: 5px;
+}
+
+footer#rodape {
+	clear: both;
+	border-top: 1px solid #606060;
+	padding-top: 10px;
+}
+
+footer#rodape p {
+		text-align: center;
+}
+
+table#tabelaspec {
+	border: 1px solid black;
+	border-spacing: 0px; /* exclusiva para tabela */
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table#tabelaspec td {
+	border: 1px solid #606060;
+	padding: 10px;
+	
+}
+
+table#tabelaspec td.ce {
+	color: #ffffff;
+	background-color: #606060;
+	text-align: right;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+	background-color: #cecece;
+	text-align: center;
+	vertical-align: center;
+}
+
+table#tabelaspec caption {
+	color: #888888;
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+table#tabelaspec caption span {
+	display: block;
+	float: right;
+	color: #000000;
+	font-size: 8pt;
+	margin-top: 10px;
+}
+
+article#noticia-principal h2 {
+	font-size: 12pt;
+	color: #606060;
+	background-color: #dddddd;
+	padding: 5px 0px 5px 10px;
+	margin: 10px;
+}
+
+
+
+.direita {
+	text-align: right;
+	font-size: 10pt;
+	color: black;
+	
+}
+
+a {
+	text-decoration: none;
+	color: #606060;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+section#corpo {
+	display: block;
+	width: 60%;
+	float: left;
+	border-right: 1px solid #606060;
+	padding-right: 15px;
+}
+
